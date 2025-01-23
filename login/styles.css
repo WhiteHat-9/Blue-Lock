@@ -1,0 +1,286 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-image: url(kakashi-hatake-ai-3840x2160-18785.jpg); /* Replace with your image path */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure body takes full height */
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.container {
+    color: #ccc;
+    max-width: 400px; /* Maintain maximum width */
+    width: 90%; /* Allow for responsive scaling */
+    margin: 20px; /* Reduced margin for mobile */
+    padding: 20px;
+    background: transparent; /* Semi-transparent background */
+    border: 2px solid rgba(255, 255, 255, 0.8); /* White border with transparency */
+    border-radius: 10px; /* Rounded corners */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    background: transparent;
+    color: #ccc;
+    height: 30px;
+    width: 100%;
+    padding: -2px 10px 10px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Adjust font size for readability */
+}
+
+#logout{
+    width: 100%;
+    padding: 10px;
+    background-color: #181532;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.login{
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+#logout:hover {
+    background-color: #218838;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    background-color: transparent; /* Light red background */
+    border: 1px solid transparent; /* Red border */
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#home {
+    height: 100%;
+    width: 100%;
+    color: #ccc;
+}
+.navbar{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    background-color:transparent;
+}
+.navlink{
+    color:rgba(116, 241, 250, 0.349);
+    text-decoration: none;
+    padding: 15px 0px 15px 0px;
+}
+
+.dropdown{
+    padding: 15px 0px 15px 0px;
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn{
+    font-size: 16px;
+    border: none;
+    margin: 0px;
+    background-color:transparent;
+    color: #686560;
+}
+.navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: transparent;
+    margin-top: 2px;
+
+}
+.drop-down-content{
+display: none;
+position: absolute;
+background-color:#725B91;
+min-width: 160px;
+z-index: 1;
+}
+
+.drop-down-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align:left;
+}
+
+.dropdown:hover .drop-down-content{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: #686560;
+}
+
+#Nilesh{
+    height: 45px;
+    width: 60px;
+    font-size: 23px;
+    color:#686560;
+    padding: 3px 0px 3px 0px;
+    border-radius: 10%;
+    text-align: center;
+    
+}
+
+.msghide{
+    display: none;
+}
+
+.para{
+    width: 100%;
+    height: 600px;
+}
+
+.notes{
+    height: 60px;
+    font-size: 30px;
+    color:#ccc;
+    left: 20px;
+    position:relative;
+    overflow: hidden;
+    left: 30px;
+    animation-duration: 1.5s;
+    animation-delay: 0.1s;
+    animation-name: slide;
+    margin: 40px 0px 0px 0px;
+}
+
+.quot{
+    height: 150px;
+    width: 600px;
+    padding-left: 820px;
+    font-size: 30px;
+    font-family:fantasy;
+    color:#DDDEFF;
+    position:relative;
+    overflow: hidden;
+    left: 30px;
+    animation-duration: 2s;
+    animation-delay: 0.1s;
+    animation-name: ani-quot;
+    margin: 40px 0px 0px 0px 
+}
+
+
+#logout{
+    margin-top:9px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 20px; /* Reduced margin for mobile */
+    }
+
+    .navbar{
+        font-size: 12px;
+    }
+
+    .para{
+       
+        height:670px;
+    }
+
+    
+    .notes{
+        font-size: 20px;
+        left: 0px;
+    }
+
+    .quot{
+        height: 70px;
+        width: 100%;
+        padding-left: 3px;
+        font-size: medium;
+        animation-name: mani-quot;
+        overflow: hidden;
+        position: relative;
+        margin: 40px 0px 0px 0px;
+
+    }
+
+    
+    .para{
+        height: 700px;
+    }
+
+    
+
+   
+    #home {
+        height: inherit;
+        width: 100%;
+        color: #ccc;
+    }
+
+    #Nilesh{
+        font-size: 17px;
+    }
+
+    button {
+        font-size: 18px; /* Slightly larger button text */
+    }
+
+    input {
+        font-size: 16px; /* Ensure input text is readable */
+    }
+}
+
+
+
+
+@keyframes slide {
+   0%{left: -300px;}
+   
+   100%{left: 20px;}
+}
+
+@keyframes ani-quot{
+    0%{left: -1400px;}
+
+    100%{left: 20px;}
+}
+
+@keyframes mani-quot{
+    0%{left: -200px;}
+
+    100%{left: 20px;}
+}
+
